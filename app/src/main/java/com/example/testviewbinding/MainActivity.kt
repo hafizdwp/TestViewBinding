@@ -6,11 +6,14 @@ import com.example.testviewbinding.databinding.ActivityMainBinding
 
 class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::inflate) {
 
+    override val fragmentContainerId: Int?
+        get() = layout.container.fragmentContainer.id
+
     override fun onReady() {
         layout.textTest.text = "bro"
     }
 
     override fun onSetupFragment(): Fragment {
-        return Fragment()
+        return MainFragment()
     }
 }
