@@ -1,0 +1,46 @@
+package com.example.testviewbinding.base
+
+import android.content.Context
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import androidx.viewbinding.ViewBinding
+import com.example.testviewbinding.databinding.FragmentMainBinding
+
+/**
+ *
+ * @author hafizdwp
+ * 04/10/2022
+ **/
+abstract class BaseFragment<ACTIVITY : AppCompatActivity, BINDING : ViewBinding>(
+        private val bindingInflater: (LayoutInflater, ViewGroup?, Boolean) -> BINDING
+) : Fragment() {
+
+    lateinit var mActivity: ACTIVITY
+    lateinit var mContext: Context
+    lateinit var layout: BINDING
+
+    abstract fun onViewReady()
+
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        setHasOptionsMenu(true)
+        mActivity = requireActivity() as ACTIVITY
+        mContext = requireContext()
+    }
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        layout = bindingInflater.invoke(inflater, container, false)
+        return layout.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        onViewReady()
+    }
+}
