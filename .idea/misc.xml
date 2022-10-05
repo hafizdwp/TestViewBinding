@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestViewBinding/app/src/main/res/drawable/ic_arrow_left.xml" value="0.161" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TestViewBinding/app/src/main/res/layout/activity_main.xml" value="0.22327898550724637" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TestViewBinding/app/src/main/res/layout/base_fragment_container.xml" value="0.1016914191419142" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TestViewBinding/app/src/main/res/layout/fragment_main.xml" value="0.22327898550724637" />

@@ -9,11 +9,13 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
     override val fragmentContainerId: Int?
         get() = layout.container.fragmentContainer.id
 
+
     override fun onReady() {
-        layout.textTest.text = "bro"
+
     }
 
     override fun onSetupFragment(): Fragment {
         return MainFragment()
     }
+
 }

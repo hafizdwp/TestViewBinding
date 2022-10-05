@@ -11,6 +11,12 @@ import com.example.testviewbinding.databinding.FragmentMainBinding
 class MainFragment : BaseFragment<MainActivity, FragmentMainBinding>(FragmentMainBinding::inflate) {
 
     override fun onViewReady() {
-        layout.textFragment.text = "eyo"
+        layout.toolbar.apply {
+            setNavigationIcon(R.drawable.ic_arrow_left)
+            setNavigationOnClickListener {
+                requireActivity().onBackPressed()
+            }
+            setTitle("asd")
+        }
     }
 }
