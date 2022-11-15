@@ -5,6 +5,133 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+
+        <!-- Hex opacity values -->
+        <!--  100% — FF-->
+        <!--  95% — F2-->
+        <!--  90% — E6-->
+        <!--  85% — D9-->
+        <!--  80% — CC-->
+        <!--  75% — BF-->
+        <!--  70% — B3-->
+        <!--  65% — A6-->
+        <!--  60% — 99-->
+        <!--  55% — 8C-->
+        <!--  50% — 80-->
+        <!--  45% — 73-->
+        <!--  40% — 66-->
+        <!--  35% — 59-->
+        <!--  30% — 4D-->
+        <!--  25% — 40-->
+        <!--  20% — 33-->
+        <!--  15% — 26-->
+        <!--  10% — 1A-->
+        <!--  5% — 0D-->
+        <!--  0% — 00-->
+
+        <color name="colorPrimary">#E13C44</color>
+        <color name="colorPrimaryDark">#9A1927</color>
+        <color name="colorAccent">#E13C44</color>
+
+        <color name="blueEnutri">#4567AE</color>
+        <color name="blueEnutriDark">#FF1D2457</color>
+        <color name="red">#E02235</color>
+        <color name="red_light">#f7e7e8</color>
+        <color name="blue_light">#DFE2E8</color>
+        <color name="green">#63BD1E</color>
+        <color name="green_light">#C5E5AC</color>
+        <color name="green_qiscus">#27AE60</color>
+        <color name="white">#FFF</color>
+        <color name="yellow">#FFC120</color>
+        <color name="yellow_light">#E4D3A5</color>
+        <color name="grey">#757575</color>
+        <color name="grey_light">#ccc</color>
+        <color name="grey_lighter">#f2f2f2</color>
+        <color name="grey_dark">#949495</color>
+        <color name="grey_transparent">#c8616161</color>
+        <color name="black">#212121</color>
+        <color name="black_50">#80000000</color>
+        <color name="black_75">#BF000000</color>
+        <color name="black_absolute">#000000</color>
+        <color name="highlighted">#DEEEFE</color>
+        <color name="border_avatar">#BCC2C2</color>
+
+        <color name="default_android_grey">#808080</color>
+        <color name="default_android_bg">#FAFAFA</color>
+        <color name="divider_toolbar">#E0E0E0</color>
+
+        <color name="speedometerRed">#FF9A9A</color>
+        <color name="speedometerYellow">#FFE8AE</color>
+        <color name="speedometerGreen">#A2CE80</color>
+        <color name="speedometerIndicatorColor">#E24255</color>
+
+        <color name="graph_color_3SD">#000000</color>
+        <color name="graph_color_2SD">#C00203</color>
+        <color name="graph_color_1SD">#FF7F00</color>
+        <color name="graph_color_median">#007F01</color>
+        <color name="blueDisabledV2">#B2B2B2</color>
+
+        <color name="carousel_red">#FF676A</color>
+        <color name="carousel_yellow">#F9B854</color>
+        <color name="carousel_blue">#81D4F8</color>
+        <color name="carousel_grey">#EFF3DC</color>
+
+        <color name="tpc_percent_low">#63BD1E</color>
+        <color name="tpc_percent_moderate">#FFC120</color>
+        <color name="tpc_percent_high">#FF5757</color>
+
+        <color name="tpc_low">#EFF6E9</color>
+        <color name="tpc_moderate">#FFF6E0</color>
+        <color name="tpc_high">#FFE0E0</color>
+
+        <!-- tummypedia -->
+        <string-array name="tummy_tipe">
+            <item>#a8a9ad</item>
+            <item>#818286</item>
+            <item>#5a5b5c</item>
+            <item>#3d3d3f</item>
+        </string-array>
+
+        <string-array name="warna">
+            <item>#dbbb10</item>
+            <item>#d6980d</item>
+            <item>#687f13</item>
+            <item>#624907</item>
+            <item>#170f00</item>
+        </string-array>
+
+        <!-- qiscus -->
+        <color name="qiscus_white">#FFFFFF</color>
+        <color name="qiscus_divider">#B6B6B6</color>
+        <color name="qiscus_left_bubble">#D0D0D0</color>
+        <color name="qiscus_right_bubble">#FFFFFF</color>
+        <color name="qiscus_light_grey">#D8D8D8</color>
+        <color name="qiscus_primary_text">#2C2C36</color>
+        <color name="qiscus_secondary_text">#979797</color>
+        <color name="qiscus_red">#d32f2f</color>
+        <color name="qiscus_green">#94CA62</color>
+        <color name="bubble_left">#E8E8E8</color>
+
+        <color name="qiscus_message_state_pending">#ffffff</color>
+        <color name="qiscus_message_state_read">#4567AE</color>
+
+        <color name="send_message">#757575</color>
+        <color name="deliver_message">#757575</color>
+        <color name="dateBackground">#E0E0E0</color>
+        <color name="qiscus_white_grey">#FAFAFA</color>
+
+        <!-- Revamp -->
+        <color name="revamp_blue_lighter">#F4F6FB</color>
+        <color name="revamp_blue_light">#E9EDF6</color>
+        <color name="revamp_blue">#4567AE</color>
+        <color name="revamp_grey">#BDBDBD</color>
+        <color name="revamp_grey_2">#4F4F4F</color>
+        <color name="revamp_grey_3">#828282</color>
+        <color name="revamp_grey_4">#BDBDBD</color>
+        <color name="revamp_grey_disabled">#E0E0E0</color>
+        <color name="enutri_peach">#FCF7F8</color>
+        <color name="revamp_orange">#FF8B49</color>
+        <color name="revamp_orange_light">#FDEFE2</color>
+        <color name="revamp_red_light">#FBE4E6</color>
+
 </resources>

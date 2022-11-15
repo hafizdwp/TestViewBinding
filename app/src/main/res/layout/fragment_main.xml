@@ -1,19 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FCF7F8"
     android:orientation="vertical">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        android:background="@android:color/darker_gray"
+        android:background="@color/white"
         android:contentInsetStart="0dp"
         android:contentInsetLeft="0dp"
         android:contentInsetEnd="0dp"
         android:contentInsetRight="0dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal" />
 
-    </androidx.appcompat.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_half_dp"
+        android:background="#E0E0E0" />
+
+    <Button
+        android:id="@+id/btn_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/gradient"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/dimens_16dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/tes4"
+            app:layout_constraintDimensionRatio="322:144" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="asd"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="@id/gradient"
+            app:layout_constraintRight_toRightOf="@id/gradient" />
+
+
+        <ToggleButton
+            style="@style/ToggleButton.White.RedStroke"
+            android:id="@+id/btn_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="ya"
+            android:textAllCaps="false"
+            android:textOn="ya"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gradient" />
+
+        <ToggleButton
+            style="@style/ToggleButton.White.BlueStroke"
+            android:id="@+id/btn_tidak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="no"
+            android:textAllCaps="false"
+            android:textOn="no"
+            app:layout_constraintLeft_toRightOf="@id/btn_yes"
+            app:layout_constraintTop_toBottomOf="@+id/gradient" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 </LinearLayout>

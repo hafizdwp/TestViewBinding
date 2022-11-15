@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextInputLayout.Outlined" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox"></style>
+
+    <style name="TextInputLayout.Outlined.Dropdown" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"></style>
+
+    <style name="BaseTextInputEditText">
+        <item name="android:textSize">@dimen/size_16sp</item>
+        <item name="android:padding">@dimen/dimens_12dp</item>
+    </style>
+
+    <style name="TextInputEditText.Default" parent="BaseTextInputEditText">
+
+    </style>
+
+    <style name="TextInputEditText.OnlyClickable" parent="BaseTextInputEditText">
+        <item name="android:clickable">true</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <style name="BaseToggleButton">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textSize">@dimen/size_14sp</item>
+    </style>
+
+    <style name="ToggleButton.White.RedStroke" parent="BaseToggleButton">
+        <item name="android:background">@drawable/togglebutton_white_stroke_red</item>
+        <item name="android:textColor">@drawable/togglebutton_text_red</item>
+    </style>
+
+    <style name="ToggleButton.White.BlueStroke" parent="BaseToggleButton">
+        <item name="android:background">@drawable/togglebutton_white_stroke_blue</item>
+        <item name="android:textColor">@drawable/togglebutton_text_blue</item>
+    </style>
+</resources>

@@ -5,10 +5,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
-import com.example.testviewbinding.databinding.FragmentMainBinding
 
 /**
  *
@@ -41,6 +41,25 @@ abstract class BaseFragment<ACTIVITY : AppCompatActivity, BINDING : ViewBinding>
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         onViewReady()
+    }
+
+    open fun handleBackPressed() {
+
+    }
+
+    val mHandleBackPressed = object : OnBackPressedCallback(true) {
+        override fun handleOnBackPressed() {
+            this@BaseFragment.handleBackPressed()
+        }
+    }
+
+    fun OnBackPressedCallback.enable() {
+        mActivity.onBackPressedDispatcher.addCallback(viewLifecycleOwner, this)
+    }
+
+    fun OnBackPressedCallback.disable() {
+        this.isEnabled = false
     }
 }
